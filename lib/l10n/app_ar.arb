@@ -1,0 +1,40 @@
+{
+  "@@locale" :   "ar" ,
+  "@@last_modified": "2018-05-20T17:16:46.997414",
+
+  "username": "اسم المستخدم",
+
+  "not_valid_username": "اسم المستخدم غير صحيح",
+
+  "password": "كلمة المرور",
+
+  "password_is_too_short": "كلمة المرور غير صحيحه",
+
+  "login": "تسجيل الدخول",
+
+  "signup": "اشتراك",
+
+  "language": "English",
+
+  "links": "الروابط",
+
+  "contacts": "جهات الاتصال",
+
+  "attendance": "الحضور",
+
+  "support": "الدعم",
+
+  "profile": "الملف الشخصي",
+
+  "swipe_right":"اسحب إلى اليمين للإكمال",
+
+  "swipe_left": "اسحب إلى اليسار للحذف",
+
+  "swipe_down": "اسحب لإنشاء عنصر",
+
+  "tap": "اضغط مع الاستمرار لاصطحابي",
+
+  "delete": "حذف",
+  "complete": "إكمال"
+
+}

@@ -1,10 +1,8 @@
-import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
-
-import '../constants.dart';
-
+import 'package:todo_task/model/items.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -15,6 +13,9 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
+    List<Items> items = [Items(1, AppLocalizations.of(context)!.swipe_right),Items(2, AppLocalizations.of(context)!.swipe_left),
+      Items(3, AppLocalizations.of(context)!.swipe_down),Items(4, AppLocalizations.of(context)!.tap)];
+
     debugPrint('${items[1].color}');
     return Scaffold(
         backgroundColor: Colors.black,
@@ -35,7 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       backgroundColor: Colors.redAccent,
                       foregroundColor: Colors.white,
                       icon: Icons.delete,
-                      label: 'Delete',
+                      label: AppLocalizations.of(context)!.delete,
                     ),
                   ],
                 ),
@@ -53,7 +54,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       backgroundColor: Colors.green,
                       foregroundColor: Colors.white,
                       icon: Icons.assignment_turned_in,
-                      label: 'Complete',
+                      label: AppLocalizations.of(context)!.complete,
                     ),
                   ],
                 ),

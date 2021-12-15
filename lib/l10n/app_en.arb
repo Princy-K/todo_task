@@ -1,0 +1,39 @@
+{
+  "@@locale" :   "en" ,
+  "@@last_modified": "2018-05-20T17:16:46.997414",
+
+  "username": "Username",
+
+  "not_valid_username": "Not Valid Username",
+
+  "password": "password",
+
+  "password_is_too_short": "password is too short",
+
+  "login": "Login",
+
+  "signup": "Sign Up",
+
+  "language": "عربي",
+
+  "links": "Links",
+
+  "contacts": "Contacts",
+
+  "attendance": "Attendance",
+
+  "support": "Support",
+
+  "profile": "Profile",
+
+  "swipe_right":"swipe to the right to complete",
+
+  "swipe_left": "swipe to the left to delete",
+
+  "swipe_down": "pull down to create an item",
+
+  "tap": "tap and hold to pick me up",
+
+  "delete": "Delete",
+  "complete": "Complete"
+}
