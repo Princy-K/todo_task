@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
+import 'package:todo_task/pages/on_boarding_screen.dart';
 import 'package:todo_task/pages/splash_screen.dart';
 import 'package:todo_task/provider/locale_provider.dart';
 import 'l10n/l10n.dart';
@@ -18,9 +19,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: SystemUiOverlay.values);
     return MultiProvider(
-      providers: [ListenableProvider(create: (BuildContext context)  =>LocaleProvider(),)],
-      child: ChangeNotifierProvider(
-        create: (BuildContext context)=>LocaleProvider(),
+        providers: [ListenableProvider(create: (context) => LocaleProvider()),
+          ],
         builder: (context, child) {
           final provider = Provider.of<LocaleProvider>(context);
           return MaterialApp(
@@ -34,12 +34,11 @@ class MyApp extends StatelessWidget {
               GlobalWidgetsLocalizations.delegate,
             ],
             theme: ThemeData(
-              primarySwatch: Colors.amber,
+              primarySwatch: Colors.blue,
             ),
-            home: const SplashScreen(),
+            home: const OnBoardingScreen(),
           );
-        },
-      ),
+        }
     );
   }
 }

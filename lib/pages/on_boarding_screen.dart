@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 import 'package:todo_task/pages/home_screen.dart';
 import 'package:todo_task/pages/login_screen.dart';
+import 'package:todo_task/pages/video_player_screen.dart';
 
 class OnBoardingScreen extends StatefulWidget {
   const OnBoardingScreen({Key? key}) : super(key: key);
@@ -221,7 +222,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
       ),
       onDone: () => Navigator.pushAndRemoveUntil(
           context,
-          MaterialPageRoute(builder: (context) => const LoginScreen()),
+          MaterialPageRoute(builder: (context) => const VideoPlayerScreen()),
           (Route<dynamic> route) => false),
     );
   }
